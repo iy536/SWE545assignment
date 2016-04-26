@@ -7,11 +7,11 @@ class Sample():
 
 
     def selectTwoNumbers(self):
+        # Select first random number btwn 1 t0 100
         self.number1 = random.randint(1, 100)
-        # string1, self.number1 = self.server.test.guess()
 
+        # Select second random number btwn 1 t0 100
         self.number2 = random.randint(1, 100)
-        # string2, self.number2 = self.server.test.guess()
 
         # Test Server's guess() fumction
         string3, self.number3 = self.server.test.guess()
@@ -19,6 +19,7 @@ class Sample():
         print "First Number: %d" % self.number1
         print "Second Number: %d" % self.number2
         print "Server guess() ==> ", string3, self.number3
+        
     def sumTwoNumbers(self):
 		sum , product = self.server.test.sumprod(self.number1, self.number2)
 		print "Sum : %d " % sum
