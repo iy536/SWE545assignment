@@ -8,12 +8,13 @@ class Sample():
 
     def selectTwoNumbers(self):
         self.number1 = random.randint(1, 100)
-        # string2, self.number2 = self.server.test.guess()
+        # string1, self.number1 = self.server.test.guess()
+
         self.number2 = random.randint(1, 100)
-        # self.number3 = random.randint(1,100)
+        # string2, self.number2 = self.server.test.guess()
+
         print "First Number: %d" % self.number1
         print "Second Number: %d" % self.number2
-        # print "Third Number: %d" % self.number3
 
     def sumTwoNumbers(self):
 		sum , product = self.server.test.sumprod(self.number1, self.number2)
@@ -22,8 +23,6 @@ class Sample():
     def productTwoNumbers(self):
 		sum , product = self.server.test.sumprod(self.number1, self.number2)
 		print "Product : %d " % product
-        # string1, self.number1 = self.server.test.guess()
-
 
 s = Sample()
 server = xmlrpclib.Server("http://www.advogato.org/XMLRPC")
