@@ -19,7 +19,7 @@ class Sample():
         print "First Number: %d" % self.number1
         print "Second Number: %d" % self.number2
         print "Server guess() ==> ", string3, self.number3
-        
+
     def sumTwoNumbers(self):
 		sum , product = self.server.test.sumprod(self.number1, self.number2)
 		print "Sum : %d " % sum
