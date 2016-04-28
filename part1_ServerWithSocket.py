@@ -13,7 +13,7 @@ while True :
         c, addr = s.accept()
         print("Got Connection From ",addr)
 
-        number = random.randint(1, 10)
+        number = random.randint(1, 100)
         welcome = "Welcome to the guess the number game!\n"
         c.sendall(welcome)
         c.sendall("Type your guess")
