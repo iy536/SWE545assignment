@@ -16,7 +16,6 @@ while True :
         number = random.randint(1, 100)
         welcome = "Welcome to the guess the number game!\n"
         c.sendall(welcome)
-        c.sendall("Type your guess")
 
         while True:
             guessTaken = (c.recv(1024))  + "\r\n"
